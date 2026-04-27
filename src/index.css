@@ -1,0 +1,74 @@
+/* frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply px-6 py-3 bg-clinic-600 text-white rounded-lg font-semibold hover:bg-clinic-700 transition-colors duration-200 shadow-md hover:shadow-lg;
+}
+
+.btn-secondary {
+    @apply px-6 py-3 bg-gray-100 text-clinic-700 rounded-lg font-semibold hover:bg-gray-200 transition-colors duration-200;
+}
+
+.btn-ghost {
+    @apply px-4 py-2 text-clinic-600 hover:bg-clinic-50 rounded-lg transition-colors duration-200;
+}
+
+/* Form inputs */
+.form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clinic-500 focus:border-transparent transition-all duration-200;
+}
+
+.form-input:disabled {
+    @apply bg-gray-50 cursor-not-allowed;
+}
+
+/* Badge styles */
+.badge {
+    @apply inline-block px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-success {
+    @apply bg-green-100 text-green-800;
+}
+
+.badge-error {
+    @apply bg-red-100 text-red-800;
+}
+
+.badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+}
+
+/* Loading spinner */
+.spinner {
+    @apply inline-block animate-spin;
+}
+
+/* Cards */
+.card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 p-6;
+}
+
+/* Hero gradient */
+.hero-gradient {
+    @apply bg-gradient-to-r from-clinic-50 to-blue-50;
+}
